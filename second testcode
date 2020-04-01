@@ -1,0 +1,66 @@
+#include "stdafx.h"
+#include "CppUnitTest.h"
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+namespace UnitTest1
+{		
+	TEST_CLASS(UnitTest1)
+	{
+	public:
+		TEST_METHOD(TestMethod1)
+		{
+			int n = 6;
+			int a[6] = { -2,11,-4,13,-5,-2 };
+			int temp = 0, record = 0, sum = 0;
+			int real = 20;
+			for (int i = 0; i < n; i++)
+			{
+				if (a[i] > 0)
+					record = 1;
+				if (record == 1)
+				{
+					temp += a[i];
+					sum = sum < temp ? temp : sum;
+				}
+			}
+			Assert::AreEqual(sum, real);
+		}
+		TEST_METHOD(TestMethod2)
+		{
+			int n = 6;
+			int a[6] = { 2,11,4,13,5,2 };
+			int temp = 0, record = 0, sum = 0;
+			int real = 37;
+			for (int i = 0; i < n; i++)
+			{
+				if (a[i] > 0)
+					record = 1;
+				if (record == 1)
+				{
+					temp += a[i];
+					sum = sum < temp ? temp : sum;
+				}
+			}
+			Assert::AreEqual(sum, real);
+		}
+		TEST_METHOD(TestMethod3)
+		{
+			int n = 6;
+			int a[6] = { -2,-11,-4,-13,-5,-2 };
+			int temp = 0, record = 0, sum = 0;
+			int real = 0;
+			for (int i = 0; i < n; i++)
+			{
+				if (a[i] > 0)
+					record = 1;
+				if (record == 1)
+				{
+					temp += a[i];
+					sum = sum < temp ? temp : sum;
+				}
+			}
+			Assert::AreEqual(sum, real);
+		}
+	};
+}
