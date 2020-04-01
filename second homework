@@ -21,10 +21,13 @@ int main()
 {
 	int n,a[999];
 	cin >> n;
-	for (int i = 0; i < n; i++)
+	while (n != EOF)
 	{
-		cin >> a[i];
+		for (int i = 0; i < n; i++)
+		{
+			cin >> a[i];
+		}
+		cout << Max(n, a);
+		cin >> n;
 	}
-	cout << Max(n, a);
-	system("pause");
 }
