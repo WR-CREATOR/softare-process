@@ -3,7 +3,7 @@
 #include <time.h>
 #include <conio.h >
 using namespace std;
-
+//习题结构
 struct test
 {
 	char text;
@@ -25,7 +25,7 @@ int maketitle(int x, int num, int type)
 		switch (a % 4)
 		{
 
-		case 1:
+		case 1:											//随机加法运算
 		{
 			c = rand() % x;
 			b = rand() % x;
@@ -40,7 +40,7 @@ int maketitle(int x, int num, int type)
 			t[i].result = b + c;
 			break;
 		}
-		case 0:
+		case 0:											 //随机除法运算
 		{
 			c = rand() % x;
 			b = rand() % x;
@@ -55,8 +55,7 @@ int maketitle(int x, int num, int type)
 			t[i].text = '/';
 			break;
 		}
-
-		case 2:
+		case 2:											 //随机减法运算
 		{
 			b = rand() % x;
 			while (b<0)
@@ -80,7 +79,7 @@ int maketitle(int x, int num, int type)
 			t[i].result = b - c;
 			break;
 		}
-		case 3:
+		case 3:											//随机生成乘法运算
 		{
 			b = rand() % x;
 			c = rand() % x;
@@ -95,13 +94,12 @@ int maketitle(int x, int num, int type)
 			t[i].text = 'X';
 			break;
 		}
-
 		}
 	}
 	return 0;
 }
 
-int selecttitle()
+int selecttitle()											//选择难度
 {
 	int kind, type,judge;
 	int num;
