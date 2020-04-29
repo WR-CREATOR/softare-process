@@ -1,3 +1,4 @@
+#include "test.h"
 #include "stdafx.h"
 #include "targetver.h"
 #include "CppUnitTest.h"
@@ -15,13 +16,13 @@ namespace UnitTest1
 			FILE *fp;
 			errno_t err;
 			err = fopen_s(&fp, "四则运算.txt", "w");
-			int testnum = 10;											//题目数量
-			int maxnum = 100;											//最大数
-			int length = 10;											//题目长度
-			int symbol=4;												//运算符数
-			int bracketsnum = 4;										//括号个数
-			int littlenum = 0;											//小数个数
-			int fileflag = 1;											//是否输出到文件
+			int testnum = 10;									//题目数量
+			int maxnum = 100;									//最大数
+			int length = 10;									//题目长度
+			int symbol=4;										//运算符数
+			int bracketsnum = 4;								        //括号个数
+			int littlenum = 0;									//小数个数
+			int fileflag = 1;									//是否输出到文件
 
 			//sc(maxnum, length, symbol, bracketsnum, littlenum, fileflag, fp);
 			fclose(fp);
@@ -31,13 +32,13 @@ namespace UnitTest1
 			FILE *fp;
 			errno_t err;
 			err = fopen_s(&fp, "四则运算.txt", "w");
-			int testnum = 10;											//题目数量
-			int maxnum = 100;											//最大数
-			int length = 10;											//题目长度
-			int symbol = 4;												//运算符数
-			int bracketsnum = 4;										//括号个数
-			int littlenum = 0;											//小数个数
-			int fileflag = 1;											//是否输出到文件
+			int testnum = 10;									//题目数量
+			int maxnum = 100;									//最大数
+			int length = 10;									//题目长度
+			int symbol = 4;										//运算符数
+			int bracketsnum = 4;								        //括号个数
+			int littlenum = 0;									//小数个数
+			int fileflag = 1;									//是否输出到文件
 
 			//sc(maxnum, length, symbol, bracketsnum, littlenum, fileflag, fp);
 			fclose(fp);
@@ -47,13 +48,13 @@ namespace UnitTest1
 			FILE *fp;
 			errno_t err;
 			err = fopen_s(&fp, "四则运算.txt", "w");
-			int testnum = 10;											//题目数量
-			int maxnum = 100;											//最大数
-			int length = 10;											//题目长度
-			int symbol = 4;												//运算符数
-			int bracketsnum = 4;										//括号个数
-			int littlenum = 0;											//小数个数
-			int fileflag = 1;											//是否输出到文件
+			int testnum = 10;									//题目数量
+			int maxnum = 100;									//最大数
+			int length = 10;									//题目长度
+			int symbol = 4;										//运算符数
+			int bracketsnum = 4;								        //括号个数
+			int littlenum = 0;									//小数个数
+			int fileflag = 1;									//是否输出到文件
 
 			//sc(maxnum, length, symbol, bracketsnum, littlenum, fileflag, fp);
 			fclose(fp);
